@@ -85,11 +85,3 @@ void calc_result(const char *string, int len){
     sprintf(str, "%d", result);
     store(str, strlen(str));
 }
-
-
-
-
-
-
-
-

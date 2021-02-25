@@ -1,1 +1,0 @@
-cmd_/home/rozov/IO/report-io/lab1/char_dev.o := ld -m elf_x86_64 -z max-page-size=0x200000   -r -o /home/rozov/IO/report-io/lab1/char_dev.o /home/rozov/IO/report-io/lab1/./src/file_handlers.o /home/rozov/IO/report-io/lab1/./src/calculator.o /home/rozov/IO/report-io/lab1/./src/char_dev.o 

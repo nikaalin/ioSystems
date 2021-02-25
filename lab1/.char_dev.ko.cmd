@@ -1,1 +1,0 @@
-cmd_/home/rozov/IO/report-io/lab1/char_dev.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/rozov/IO/report-io/lab1/char_dev.ko /home/rozov/IO/report-io/lab1/char_dev.o /home/rozov/IO/report-io/lab1/char_dev.mod.o ;  true
