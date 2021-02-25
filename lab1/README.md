@@ -14,32 +14,36 @@
 ## Инструкция по сборке
 
 1. Склонировать репозиторий
-    git clone .... 
+```shell
+    git clone https://github.com/nikaalin/ioSystems.git
+```
 2. Собрать проект
-    - cd ...
-    - make
+```shell
+    cd ioSystems/lab1
+    make
+```
 
 ## Инструкция пользователя
 0. Произвести сборку проекта
 1. Загрузить собранный модуль
-    - sudo insmode char_dev.ko
+    - ```shell sudo insmode char_dev.ko ```
 2. Произвести необходимые действия
 3. Выгрузить модуль
-    - sudo rmmode char_dev
-*Примечание: чтобы не писать sudo, можно вызвать команду sudo -i
+    - ```shell sudo rmmode char_dev.ko ```
+*Примечание: чтобы не писать sudo, можно вызвать команду ```sudo -i```
  
 П.2. подразумевает собой выполение следующих функций
 
-```bash
+```shell
 echo "value_1operationvalue_2" > /dev/var2
 ```
 - value_1 - первое значение
 - оperation - операция: сложение (+), вычитание (-), деление (/), умножение (*)
 - value_2 - второе значение
 - Текст подается без пробелов
-- Пример, echo "5+6" > /dev/var2
+- Пример, ```echo "5+6" > /dev/var2```
 
-```bash
+```shell
 cat /dev/var2
 dmesg
 
