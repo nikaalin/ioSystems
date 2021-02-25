@@ -40,50 +40,46 @@ void store(char* result, size_t len)
     buffer_ptr += (sprintf(buffer + buffer_ptr,"%s\n", result));
 }
 
-//TODO: function is broken, fix it
 void calc_result(const char *string, int len){
-
-    printk(KERN_INFO "Driver: start calc\n");
 
     int first = 0, second = 0;
     int operator_index = 0;
     int result = 0;
 
     int i = 0;
-    while(!(string[i] == plus || string[i] == minus || string[i] == multiply || string[i] == divide)){
-     first = first*10 + (string[i]-48);
-      i++;
+    while(!(string[i] == plus 
+        || string[i] == minus 
+        || string[i] == multiply 
+        || string[i] == divide))
+    {
+        first = first*10 + (string[i]-48);
+        i++;
     }
 
     operator_index = i;
     i++;
-    if(i>=len){
-    //ToDo: throw exception
-    }
-
-    for (; i < len-1; ++i) {
-    second = second*10 + (string[i]-48);
-
+    
+    for (; i < len-1; ++i) 
+    {
+        second = second*10 + (string[i]-48);
     }
     
 
-    if (string[operator_index] == plus){
+    if (string[operator_index] == plus)
+    {
         result = first + second;
-    printk(KERN_INFO "Test = %d\n", result);
     }
-    else if (string[operator_index] == minus){
+    else if (string[operator_index] == minus)
+    {
      result = first - second;
-    printk(KERN_INFO "Test = %d\n", result);
     }
-    else if (string[operator_index] == multiply){
+    else if (string[operator_index] == multiply)
+    {
        result = first * second;
-    printk(KERN_INFO "Test = %d\n", result);
     }
     else if (string[operator_index] == divide){
         result = first / second;
-    printk(KERN_INFO "Test = %d\n", result);
     }
-    printk(KERN_INFO "Driver: end calc\n");
 
     char str[20];
     sprintf(str, "%d", result);
