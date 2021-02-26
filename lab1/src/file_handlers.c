@@ -4,6 +4,7 @@
 #define BUFSIZE  100
 
 MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Author");
 MODULE_DESCRIPTION("Lab 1 Kernel Module");
 
 struct proc_dir_entry *ent;
