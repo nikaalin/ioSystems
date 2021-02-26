@@ -1,7 +1,7 @@
 #include "calculator.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Bepis team");
+MODULE_AUTHOR("Author");
 MODULE_DESCRIPTION("Lab 1 Kernel Module");
 
 char *buffer;
