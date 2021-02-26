@@ -5,7 +5,6 @@ MODULE_AUTHOR("Author");
 MODULE_DESCRIPTION("Lab 1 Kernel Module");
 
 char *buffer;
-//module_param(buffer,char,0660);
 
 size_t buffer_ptr = 0;
 
