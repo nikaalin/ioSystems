@@ -10,7 +10,7 @@
 #include <linux/string.h>
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Bepis Team");
+MODULE_AUTHOR("NikRoz");
 MODULE_DESCRIPTION("I/O LAB 2 BLOCK DRIVER");
 
 #define MEMSIZE 0x19000 // Size of Ram disk in sectors: 0x19000 * 512 bytes/sec = 50 Mb
